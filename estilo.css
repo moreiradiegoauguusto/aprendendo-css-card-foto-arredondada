@@ -1,0 +1,88 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt;
+	background-color: #F5FFFA;
+	color: #363636;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	}
+div {
+	display: flex;
+	flex-direction: column;
+	background-color: #C0C0C0;
+	line-height: 1.6;
+	padding: 30px;
+	margin: 0 auto;
+	border-radius: 20px;
+	align-items: center;
+	margin-top: 50px;
+	max-width: 320px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+	transition: box-shadow 0.3 ease;
+}
+div:hover{
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.imagemDiego{
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 6px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+.imagemDiego:hover{
+	transform: scale(1.4);
+	cursor: pointer;
+}
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14pt;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #fff;
+}
+p {
+	font-size: 12pt;
+	margin-bottom: 20px;
+	color: #FFFAFA;
+}
+.telefone, .email {
+	display: none;
+	color: #007bff;
+}
+ul {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+}
+ul li {
+	list-style: none;
+	font-size: 12pt;
+	cursor: pointer;
+	border-radius: 8px;
+	padding: 10px;
+	margin-bottom: 15px;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+	background-color: #A9A9A9;
+	color: #FFFAFA;
+}
+ul li:hover .email, ul li:hover .telefone{
+	display: inline;
+	opacity: 1;
+}
+
+ul li:hover{
+	opacity: 1.2;
+	background-color: #808080;
+	color: #FFFAFA;
+	transform: translateY(-5px);
+}
